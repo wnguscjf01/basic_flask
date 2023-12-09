@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+</head>
+<body>
+    {% if s_id %}
+    <h2>already logged in.</h2>
+    {% else %}
+    <h2>login here:</h2>
+    <form method = "POST">
+        <input name="user" type="text" value="" placeholder="type username">
+        <input name="pwd" type="text" value="" placeholder="type password">
+        <input type="submit">
+        <br>
+    </form>
+    <button type="button" onclick="location.href='/register'">register</button>
+    {% endif %}
+    <button type="button" onclick="location.href='/'">home</button >
+</body>
+</html>

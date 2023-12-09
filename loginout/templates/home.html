@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>home sweet home</title>
+</head>
+
+<body>
+    {% if s_id %}
+    <h1>Hello {{s_id}}</h1>
+    <button type="button" onclick="location.href='/logout'">logout</button >
+    <button type="button" onclick="location.href='/modify'">modify</button >
+    {% else %}
+    <h2>please login</h2>
+    <button type="button" onclick="location.href='/login'">login</button>
+    <button type="button" onclick="location.href='/register'">register</button >
+    {% endif %}
+</body>
+</html>

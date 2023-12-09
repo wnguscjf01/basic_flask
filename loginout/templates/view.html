@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>View</title>
+  </head>
+  <body>
+    <p>Read posts</p>
+	<table>
+	<tr>
+		<td> Title </td>
+		<td> Content </td>
+	</tr>
+	{% for post in posts %}
+	<tr>
+		<td> {{ post[0] }} </td>
+		<td> {{ post[1] }} </td>
+	</tr>
+	{% endfor %}
+	</table>
+  </body>
+</html>
+

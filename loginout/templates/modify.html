@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>modify</title>
+</head>
+<body>
+    {% if s_id %}
+    <h2>modify your account information:</h2>
+    <form method = "POST">
+        <input name="user" type="text" value="" placeholder="type current username">
+        <input name="pwd" type="text" value="" placeholder="type current password">
+        <br>
+        <input name="newuser" type="text" value="" placeholder="type new username">
+        <input name="newpwd" type="text" value="" placeholder="type new password">
+        <input type="submit">
+    </form>
+    {% else %}
+    <h2>login first!</h2>
+    {% endif %}
+    <button type="button" onclick="location.href='/'">home</button>
+</body>
+</html>
